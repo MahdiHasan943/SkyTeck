@@ -1,0 +1,21 @@
+.svg{
+    transform:rotate-45; 
+    translate: y(1);
+    
+}
+.regis{
+
+   
+    background: linear-gradient(315deg,#098b99,#057fa8);
+    transition: all .5s ease;
+    z-index: -1;
+}
+
+
+.regis{
+   
+    background: linear-gradient(315deg,#098b99,#4eb086);
+    transition: all .5s ease;
+    z-index: -1;
+}
+
