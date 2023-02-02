@@ -18,4 +18,14 @@
     transition: all .5s ease;
     z-index: -1;
 }
+.nav{
+    top: 0; 
+     left: 0; 
+    width: 100%;
+    z-index: 999;
+    position: sticky;
+    animation: fadeInDown .5s ease-in-out 0s 1 normal none running;
+
+    background-color: #fff!important;
+}
 

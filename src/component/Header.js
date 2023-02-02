@@ -69,7 +69,23 @@ const Header = () => {
     </li>
     <li className=' py-2 lg:py-0'>
               <NavLink
-                to='/Dashboard'
+                to='/addToCart'
+                aria-label='courses'
+                title='addToCart'
+                className={({ isActive }) =>
+                  isActive
+                    ? 'font-bold tracking-wide text-[#098b99]    transition-colors duration-200 hover:text-deep-purple-accent-400'
+                    : 'font-medium tracking-wide text-[#111111] transition-colors duration-200 hover:text-deep-purple-accent-400'
+                }
+              >
+                AddToCart
+              </NavLink>
+    </li>
+
+
+    <li className=' py-2 lg:py-0'>
+              <NavLink
+                to='/dashboard'
                 aria-label='Dashboard'
                 title='Dashboard'
                 className={({ isActive }) =>
@@ -82,11 +98,11 @@ const Header = () => {
               </NavLink>
     </li>
 
-    <li className=' py-2 lg:py-0'>
-      <NavLink to={'/'}>
+    <NavLink to={'/'}>
         <BsCartCheck className='text-[20px]'></BsCartCheck>
       </NavLink>
-    </li>
+ 
+  
 
 
 
@@ -112,7 +128,7 @@ const Header = () => {
   return (
     <>
       
-      <div className=" sm:flex justify-between py-6 px-12 bg-[#0f6c76] text-center">
+      <div className=" sm:flex  justify-between py-6 px-12 bg-[#0f6c76] text-center">
               <div className=""> <p className='text-[#e6f8fc]'>Keep learning with free resources during COVID-19.</p></div>
         <div className="flex justify-center items-center"><p className='text-[#e6f8fc]'>Become An Instructor</p>
           <p className='text-white mx-4'>|</p>
@@ -123,7 +139,7 @@ const Header = () => {
   
           </div>
           
-    <div className=' shadow-lg'>
+    <div className='  nav  shadow-lg'>
               <div className='px-4   flex it py-5 lg:py-8 mx-auto  '>
              
                  
@@ -133,8 +149,8 @@ const Header = () => {
                   
         
                
-          <div className='flex  items-center justify-between'>
-            <div className="flex  items-center"> 
+          <div className='flex    items-center justify-between'>
+              <div className="flex  items-center"> 
               
             <img src={letter} alt="" />
             <p className='    text-2xl text-[#111111] text-center font-extrabold tracking-wide #302e2c text-shadow-lg'>
@@ -172,12 +188,14 @@ const Header = () => {
            <button className='regis text-white rounded-sm py-3 px-8'>Register Now</button>
 
          </ul>
-         
+           
+     
                      
                       <div className='lg:hidden'>
                           
            
-                          {isMenuOpen ? (
+              {isMenuOpen ? (
+                
                             <button
                             aria-label='Close Menu'
                             title='Close Menu'
@@ -196,7 +214,12 @@ const Header = () => {
                     
                           )
                               : (
-                              
+                  <div className="flex items-center">
+
+    <NavLink to={'/'} className='px-4'>
+                              <BsCartCheck className='text-[20px]'></BsCartCheck>
+                            </NavLink>
+                       
                       <button
                       aria-label='Open Menu'
                       title='Open Menu'
@@ -218,7 +241,11 @@ const Header = () => {
                       />
                       </svg>
                                   </button>
-                              )
+                    
+                    
+                    
+                             </div>
+                               )
                               
                               
                               
@@ -236,14 +263,18 @@ const Header = () => {
                   
               </div>
            
-      </div>
-         {isMenuOpen && (
+              {isMenuOpen && (
               <div className='absolute bg-[white] shadow-xl  top-30 left-0 w-[100%] z-40'>
                
                           <div className=" m px-8 pb-4 ">
                               <ul className='block lg:hidden border-t-[1px] border-[#eee]'>
-                                  {menu}
-             </ul>
+                {menu}
+                
+              </ul>
+              
+ 
+              
+              
            
                         </div>
                           
@@ -251,6 +282,8 @@ const Header = () => {
 
               </div>
             )}
+      </div>
+       
          
       </>
   )
