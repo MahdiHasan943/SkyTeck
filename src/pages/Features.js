@@ -1,8 +1,13 @@
 import React from 'react'
 
 import './hero.css'
+import { motion, useScroll } from "framer-motion"
+
 
 const Features = () => {
+
+    const { scrollYProgress,scrollRef } = useScroll();
+
   return (
       <>
        <div className='pb-20 pt-20 bg-[#f1efee]'>
@@ -66,6 +71,30 @@ const Features = () => {
 
 
               </div>
+          </div>
+
+          <div ref={scrollRef} style={{ overflow: "scroll" }} className="pb-20 pt-20 bg-[#f1efee]">
+              
+              <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 items-center">
+                  <motion.img initial={{ opacity: 0 }}
+  whileInView={{ opacity: 20 }} className="sm:py-0 py-4" src="https://res.cloudinary.com/dev-empty/image/upload/v1674994827/j37ln6cye17aqjfgnisb.png" alt="" />
+                  <motion.img className="sm:py-0 py-4" initial={{ opacity: 0,  scale: 0.2}}
+                      whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ root: scrollRef }} src="https://res.cloudinary.com/dev-empty/image/upload/v1662220609/foaoty9yj8ztpyn3rygg.png" alt="" />
+                  <motion.img className="sm:py-0 py-4" initial={{ opacity: 0,  scale: 0.2}}
+                      whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ root: scrollRef }} src="https://res.cloudinary.com/dev-empty/image/upload/v1662220599/fw2vmnixtr8rwhb8jga8.png" alt="" />
+                  <motion.img initial={{ opacity: 0,  scale: 0.2}}
+                      whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ root: scrollRef }} src="https://res.cloudinary.com/dev-empty/image/upload/v1662220586/cmejwacwcz2ejxhv8wna.png" alt="" />
+                  <motion.img initial={{ opacity: 0,  scale: 0.2}}
+                      whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ root: scrollRef }} src="https://res.cloudinary.com/dev-empty/image/upload/v1662220578/sbwdmgrtzl0ttu3ntwt1.png" alt="" />
+                  <motion.img initial={{ opacity: 0,  scale: 0.2}}
+                      whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ root: scrollRef }} src="https://res.cloudinary.com/dev-empty/image/upload/v1662220570/fdsav9xalgcj6mjqs1rn.png" alt="" />
+
+             </div>
           </div>
       </>
   )
