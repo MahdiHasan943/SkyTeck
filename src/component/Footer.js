@@ -5,7 +5,7 @@ import letter from '../image/letter-s.png'
 const Footer = () => {
   return (
     <div>
-      <footer className="footer  p-10 bg-[#f6fafb] text-[#111111]">
+      <footer className="footer  p-20 bg-[#f6fafb] text-[#111111]">
   <div>
   <div className="flex  items-center"> 
               

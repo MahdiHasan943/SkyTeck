@@ -29,3 +29,22 @@
     background-color: #fff!important;
 }
 
+
+
+.close {
+    animation: off-on 2s  ;
+
+    transition: all .3s;
+    
+  }
+  @keyframes off-on  {
+    transform{
+        transform: rotate(45deg); 
+     }
+  
+     transform {
+    transform: rotate(20deg); 
+
+  }
+ 
+  }

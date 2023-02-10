@@ -6,6 +6,7 @@ import { FaBookOpen } from "react-icons/fa";
 import { BsCartCheck,BsArrowRightShort } from "react-icons/bs";
 
 import './header.css'
+import { motion } from "framer-motion"
 
 
 import letter from '../image/letter-s.png'
@@ -85,7 +86,7 @@ const Header = () => {
 
     <li className=' py-2 lg:py-0'>
               <NavLink
-                to='/dashboard'
+                to='/'
                 aria-label='Dashboard'
                 title='Dashboard'
                 className={({ isActive }) =>
@@ -133,14 +134,14 @@ const Header = () => {
         <div className="flex justify-center items-center"><p className='text-[#e6f8fc]'>Become An Instructor</p>
           <p className='text-white mx-4'>|</p>
           <BsArrowRightShort className='text-white font-extrabold text-[24px]'></BsArrowRightShort>
-          <Link to={'/'}><span className='text-white'>Signin</span></Link>
+          <Link to={'/auth'}><span className='text-white'>Signin</span></Link>
           
         </div>
   
           </div>
           
     <div className='  nav  shadow-lg'>
-              <div className='px-4   flex it py-5 lg:py-8 mx-auto  '>
+              <div className='px-4   flex it py-4 mx-auto  '>
              
                  
                   
@@ -184,8 +185,14 @@ const Header = () => {
           <ul className=' items-center hidden space-x-8 lg:flex '>
            
             
-           {menu}
-           <button className='regis text-white rounded-sm py-3 px-8'>Register Now</button>
+              {menu}
+              <div className="flex items-center">
+                
+              <Link to={'/auth'}>
+              <button className=' regis text-white text-[20px] font-bold   rounded-lg py-4 px-10'>Register Now</button>
+              </Link>
+             </div>
+           
 
          </ul>
            
@@ -196,19 +203,25 @@ const Header = () => {
            
               {isMenuOpen ? (
                 
-                            <button
+                <motion.button
+                animate={{
+                  // scale: [1, 1, 1, 1, 1],
+                    rotate: [30, 10, 40, 0],
+              
+                  // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                }}
                             aria-label='Close Menu'
                             title='Close Menu'
-                            className=' px-3 py-2  -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline'
+                            className=' px-3 py-2 retalive -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline'
                             onClick={() => setIsMenuOpen(false)}
                             >
-                            <svg className='svg  w-8 text-white' viewBox='0 0 24 24'>
+                            <svg className='svg close  w-8 text-white' viewBox='0 0 24 24'>
                                 <path
                                 fill='#098b99'
                                 d='M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z'
                                 />
                             </svg>
-                  </button> 
+                  </motion.button> 
                   
                       
                     
@@ -223,7 +236,7 @@ const Header = () => {
                       <button
                       aria-label='Open Menu'
                       title='Open Menu'
-                      className='px-3 py-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline bg-gray-200'
+                      className='open px-3 py-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline bg-gray-200'
                       onClick={() => setIsMenuOpen(true)}
                   >
                       <svg className='w-8 text-white' viewBox='0 0 24 24'>

@@ -1,7 +1,12 @@
 
-.avatar{
-    border-width: 2px
+.regis{
+   
+    background: linear-gradient(315deg,#098b99,#4eb086);
+    transition: all .5s ease;
+    z-index: -1;
 }
+
+/*  */
 
 
 .animate-pop-in {
@@ -10,36 +15,23 @@
     opacity: 0;
   }
 
-.girl{
-    -webkit-animation-delay: .6s;
-    animation-delay: .6s;
-}
 
 .title{
     -webkit-animation-delay: .6s;
     animation-delay: .6s;
 }
+
 .subtitle{
     -webkit-animation-delay: .8s;
     animation-delay: .8s;
 }
 
-.group{
-    -webkit-animation-delay: .9s;
-    animation-delay: .9s;
-}
-.little{
-    -webkit-animation-delay: .9s;
-    animation-delay: .9s;
-}
 
 
 
 
 
 
-
-  
 @-webkit-keyframes pop-in {
     0% {
       opacity: 0;
@@ -67,33 +59,48 @@
   }
 
 
-
-
-
-.kham{
-
-  animation: off-on 5s linear infinite
-
-}
-
-.book{
-  animation: off-on 15s linear infinite
-}
-
-.trophy{
-  animation: off-on 8s linear infinite
-}
   
+.button {
+  border: 2px solid #fff;
 
-  @keyframes off-on {
-    0% {
-      opacity: 0;
-  }
+
   
-  75% {
-      opacity: 1;
-  }
-  100% {
-      opacity: 0;
-  } 
-  }
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(0deg,  white 50%, #057fa8 50%);
+  background-size: 1320px 25px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  transition: 0.8s;
+
+}
+
+.button:hover {
+  background-position: 610px 0;
+  color: #fff;
+}
+.button:hover .flat {
+  color: #fff;
+  font-weight: 900;
+}
+
+.button {
+
+  text-decoration: none;
+  font-size: 12px;
+  color: #111;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+
+
+
+
+
+
+
+
+
+
+}
