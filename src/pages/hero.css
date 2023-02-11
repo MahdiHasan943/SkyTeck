@@ -106,3 +106,8 @@
     
     font-family: Josefin Sans,sans-serif
   }
+
+  .shadow{
+    box-shadow: 0 2px 30px rgb(0 0 0 / 3%);
+    transition: all .5s ease;
+  }

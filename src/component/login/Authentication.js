@@ -43,7 +43,7 @@ const Authentication = () => {
                   className={({ selected }) =>
                     
                  classNames(
-                   ' text-[#292a2d] text-[20px] font-bold border-none outline-none     rounded-full py-4 px-10',
+                   '  text-[20px] font-bold border-none outline-none     rounded-full py-4 px-10',
                    '',
                    selected
                      ? ' bg-gradient-to-r from-[#6cc17e] to-[#098b99] outline-none  border-none text-[white] text-[20px] font-bold   rounded-full py-4 px-10'
@@ -56,10 +56,10 @@ const Authentication = () => {
                  className={({ selected }) =>
        
                   classNames(
-                    ' text-[#292a2d]  text-[20px] outline-none border-none  font-bold rounded-full py-4 px-10',
+                    '   text-[20px] outline-none border-none  font-bold rounded-full py-4 px-10',
                     '',
                     selected
-                      ? 'bg-gradient-to-r from-[#6cc17e] outline-none  to-[#098b99] border-none  text-[white] text-[20px] font-bold  rounded-full py-4 px-20'
+                      ? 'bg-gradient-to-r from-[#6cc17e]  to-[#098b99] outline-none  border-none  text-[white] text-[20px] font-bold  rounded-full  px-20'
                       : ''
                  )
                }>Login

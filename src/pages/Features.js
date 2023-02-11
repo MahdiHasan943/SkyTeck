@@ -76,8 +76,8 @@ const Features = () => {
           <div ref={scrollRef} style={{ overflow: "scroll" }} className="pb-20 pt-20 bg-[#f1efee]">
               
               <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 items-center">
-                  <motion.img initial={{ opacity: 0 }}
-  whileInView={{ opacity: 20 }} className="sm:py-0 py-4" src="https://res.cloudinary.com/dev-empty/image/upload/v1674994827/j37ln6cye17aqjfgnisb.png" alt="" />
+                  <motion.img initial={{ opacity: 0, scale:0.2 }}
+  whileInView={{ opacity: 20 , scale:1 }} className="sm:py-0 py-4" src="https://res.cloudinary.com/dev-empty/image/upload/v1674994827/j37ln6cye17aqjfgnisb.png" alt="" />
                   <motion.img className="sm:py-0 py-4" initial={{ opacity: 0,  scale: 0.2}}
                       whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ root: scrollRef }} src="https://res.cloudinary.com/dev-empty/image/upload/v1662220609/foaoty9yj8ztpyn3rygg.png" alt="" />

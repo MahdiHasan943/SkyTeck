@@ -39,7 +39,7 @@ const Footer = () => {
   </div>
       </footer>
       <div className="border-t-[1px] bg-[#f6fafb] py-4 border-[#eee]">
-        <p className='text-center text-[#7dc2c4]'>© SkyTeck 2023 is Proudly Owned by <span className='text-[#098ba2]'>Mahdi Hasan</span></p>
+        <p className='text-center text-[#111]'>© SkyTeck 2023 is Proudly Owned by <span className='text-[#098ba2]'>Mahdi Hasan</span></p>
       </div>
     </div>
   ) 

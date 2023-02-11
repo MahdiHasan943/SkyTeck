@@ -14,7 +14,7 @@ const TransForm = () => {
                   
                   <h1 className=' text-black text-[40px] subtitle animate-pop-in font-bold'> Transform Your Life Through <br /> Online Education</h1>
                   
-                  <p className=' text-[18px] my-8 text-[#767676]'>Instructors from around the world teach millions of students on Edmy. We provide <br /> the tools and skills to teach what you love. And you can also achieve your goal.</p>
+                  <p className=' text-[16px] my-8 text-[#767676]'>Instructors from around the world teach millions of students on Edmy. We <br /> provide  the tools and skills to teach what you love. And you can also achieve <br /> your goal.</p>
                   <div className=" sm:flex items-center px-4 shadow-2xl py-4 rounded-xl ">
                       <div className="mx-auto sm:w-[20%]">
                           <img className='mx-auto lg:h-[100%]'  src="https://edmy-react.hibootstrap.com/images/courses/course-16.jpg" alt="" />
