@@ -53,7 +53,7 @@ const ProductCart = ({ product }) => {
             title='Add to wishlist'
             className=' shadow-5xl bgg  mt-[50px]	 ml-[50px]  py-3 px-4 rounded-md'
           >
-                <BsHeartFill   className='stroke-1	 stroke-white hover:stroke-none  text-[red] fill-none font-bold	 hover:fill-[red]	  text-shadow-2xl text-[30px] ' />
+                <BsFillHeartFill   className='stroke-[0.5px] stroke-white  hover:stroke-none  text-[red] fill-none font-bold	 hover:fill-[red]	  text-shadow-2xl text-[30px] ' />
                 
   
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 import { BsCartCheck, BsArrowRightShort } from "react-icons/bs";
 import { Link } from 'react-router-dom';
-
+import './hero.css'
 
 const TransForm = () => {
   return (
@@ -26,7 +26,7 @@ const TransForm = () => {
                       </div>
                       
                   </div>
-                  <button className='regis text-white text-[10px] py-3 px-4 sm:text-[20px] font-bold  mt-8 rounded-lg sm:py-5 sm:px-12'>Find Out Now</button>
+                  <button className='regis BT text-white text-[10px] py-3 px-4 sm:text-[20px] font-bold  mt-8 rounded-lg sm:py-5 sm:px-12'>Find Out Now</button>
 
                       
                  

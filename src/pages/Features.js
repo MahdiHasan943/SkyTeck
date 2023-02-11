@@ -22,7 +22,7 @@ const Features = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-4 px-6 sm:px-12">
               
-              <div className="cart bg-[white] shadow-2xl py-8 rounded-2xl text-center">
+              <div className="cart get1 bg-[white] shadow-2xl py-8 rounded-2xl text-center">
                   <img className='mx-auto' src="https://edmy-react.hibootstrap.com/images/features/feature-1.svg" alt="" />
 
                   <h1 className='text-[20px] py-6 font-bold'>Expert-Led Video <br /> Courses</h1>
@@ -30,7 +30,7 @@ const Features = () => {
               </div>
 
 
-              <div className="cart bg-[white] shadow-2xl py-8 rounded-2xl text-center">
+              <div className="cart get1 bg-[white] shadow-2xl py-8 rounded-2xl text-center">
                   <img className='mx-auto' src="https://edmy-react.hibootstrap.com/images/features/feature-2.svg" alt="" />
 
                   <h1 className='text-[20px] py-6 font-bold'>Expert-Led Video <br /> Courses</h1>
@@ -38,7 +38,7 @@ const Features = () => {
               </div>
 
 
-              <div className="cart bg-[white] shadow-2xl py-8 rounded-2xl text-center">
+              <div className="cart get1 bg-[white] shadow-2xl py-8 rounded-2xl text-center">
                   <img className='mx-auto' src="https://edmy-react.hibootstrap.com/images/features/feature-3.svg" alt="" />
 
                   <h1 className='text-[20px] py-6 font-bold'>Expert-Led Video <br /> Courses</h1>
@@ -46,7 +46,7 @@ const Features = () => {
               </div>
 
 
-              <div className="cart bg-[white] shadow-2xl py-8 rounded-2xl text-center">
+              <div className="cart get1 bg-[white] shadow-2xl py-8 rounded-2xl text-center">
                   <img className='mx-auto' src="https://edmy-react.hibootstrap.com/images/features/feature-4.svg" alt="" />
 
                   <h1 className='text-[20px] py-6 font-bold'>Expert-Led Video <br /> Courses</h1>

@@ -107,7 +107,46 @@
     font-family: Josefin Sans,sans-serif
   }
 
+
+
   .shadow{
     box-shadow: 0 2px 30px rgb(0 0 0 / 3%);
     transition: all .5s ease;
+    background-color: white;
   }
+
+  .close{
+
+    rotate: 2 3 0 1;
+  }
+
+  @media only screen and (max-width: 588px) {
+    .white {
+      display:none;
+    }
+    
+  }
+
+  @media only screen and (max-width: 588px) {
+    .second {
+      background-color: white;
+     
+    }
+    
+  }
+
+  .BT:hover{
+    transform: scaleX(1.1) scaleY(1.1 );
+    transition: all .5s ease;
+    
+  }
+
+  .get1{
+    transition: all .5s ease;
+
+  }
+
+  .get1:hover{ transform: scaleX(1) scaleY(1.04 );
+  }
+    
+ 

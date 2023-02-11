@@ -189,7 +189,7 @@ const Header = () => {
               <div className="flex items-center">
                 
               <Link to={'/auth'}>
-              <button className=' regis text-white text-[20px] font-bold   rounded-lg py-4 px-10'>Register Now</button>
+              <button className='BT  regis text-white text-[20px] font-bold   rounded-lg py-4 px-10'>Register Now</button>
               </Link>
              </div>
            
@@ -205,8 +205,9 @@ const Header = () => {
                 
                 <motion.button
                 animate={{
-                  // scale: [1, 1, 1, 1, 1],
-                    rotate: [30, 10, 40, 0],
+                  // scale: [1,1.2,1.4,1],
+                    rotate: [ 40, 30, 0 , 40 , 40 , 40,0,0,0,0,0,0,0],
+                    
               
                   // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
                 }}
@@ -215,7 +216,7 @@ const Header = () => {
                             className=' px-3 py-2 retalive -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline'
                             onClick={() => setIsMenuOpen(false)}
                             >
-                            <svg className='svg close  w-8 text-white' viewBox='0 0 24 24'>
+                            <svg className='svg   w-8 text-white' viewBox='0 0 24 24'>
                                 <path
                                 fill='#098b99'
                                 d='M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z'
