@@ -53,7 +53,7 @@
     }
   }
   
-  @keyframes pop-in {
+  @keyframes pop-in  {
     0% {
       opacity: 0;
       -webkit-transform: translateY(-4rem) scale(.8);
@@ -77,13 +77,17 @@
 }
 
 .book{
-  animation: off-on 15s linear infinite
+  animation: off-on 12s linear infinite
 }
 
 .trophy{
   animation: off-on 8s linear infinite
 }
   
+.universe{
+  animation: off-on 15s linear infinite
+
+}
 
   @keyframes off-on {
     0% {
@@ -110,10 +114,19 @@
 
 
   .shadow{
-    box-shadow: 0 2px 30px rgb(0 0 0 / 3%);
+    box-shadow: 0 5px 60px rgb(0 0 0 / 4%);
     transition: all .5s ease;
     background-color: white;
+    font-size: bold;
+    font-weight: 700;
+
+
   }
+  /* .shadow:hover{
+
+    transform: scaleX(1) scaleY(1.1 );
+
+  } */
 
   .close{
 
@@ -140,13 +153,23 @@
     transition: all .5s ease;
     
   }
+  .find:hover{
+    transform: scaleX(1.1) scaleY(1.1 );
+    transition: all .5s ease;
+    
+  }
 
   .get1{
     transition: all .5s ease;
 
   }
 
-  .get1:hover{ transform: scaleX(1) scaleY(1.04 );
+  .get1:hover{ 
+    
+    /* transform: scaleX(1) scaleY(1.04 ); */
+
+    /* transform: scaleX(1) scaleY(1) scaleY(1.2); */
+  
   }
     
  

@@ -10,7 +10,7 @@ const Features = () => {
 
   return (
       <>
-       <div className='pb-20 pt-20 bg-[#f1efee]'>
+       <div className='pb-[110px] pt-20 bg-[#f1efee]'>
                     <img className='book hidden md:block mb-[-100px] mx-[150px]' src="https://edmy-react.hibootstrap.com/images/features/feature-shape-1.svg" alt="" />
 
           <div className="">
@@ -22,36 +22,56 @@ const Features = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-4 px-6 sm:px-12">
               
-              <div className="cart get1 bg-[white] shadow-2xl py-8 rounded-2xl text-center">
+              <motion.div whileHover={{
+    x: 0,
+    y: -7,
+    scale: 1,
+    rotate: 0,
+  }}  className="cart get1 bg-[white] my-4 sm:my-0 shadow-2xl py-12 rounded-2xl text-center">
                   <img className='mx-auto' src="https://edmy-react.hibootstrap.com/images/features/feature-1.svg" alt="" />
 
                   <h1 className='text-[20px] py-6 font-bold'>Expert-Led Video <br /> Courses</h1>
-                  <p className='py-4'>Instructors from around the <br /> world teach millions of students <br /> on Edmy through video.</p>
-              </div>
+                  <p className=''>Instructors from around the <br /> world teach millions of students <br /> on Edmy through video.</p>
+              </motion.div>
 
 
-              <div className="cart get1 bg-[white] shadow-2xl py-8 rounded-2xl text-center">
+              <motion.div whileHover={{
+    x: 0,
+    y: -7,
+    scale: 1,
+    rotate: 0,
+  }}  className="cart get1 bg-[white] my-4 sm:my-0 shadow-2xl py-12 rounded-2xl text-center">
                   <img className='mx-auto' src="https://edmy-react.hibootstrap.com/images/features/feature-2.svg" alt="" />
 
-                  <h1 className='text-[20px] py-6 font-bold'>Expert-Led Video <br /> Courses</h1>
-                  <p className='py-4'>Instructors from around the <br /> world teach millions of students <br /> on Edmy through video.</p>
-              </div>
+                  <h1 className='text-[20px] py-6 font-bold'>In-Demand Trendy Topics<br /> Courses</h1>
+                  <p className=''>Instructors from around the <br /> world teach millions of students <br /> on Edmy through video.</p>
+              </motion.div>
 
 
-              <div className="cart get1 bg-[white] shadow-2xl py-8 rounded-2xl text-center">
+              <motion.div whileHover={{
+    x: 0,
+    y: -7,
+    scale: 1,
+    rotate: 0,
+  }}  className="cart get1 bg-[white] my-4 sm:my-0 shadow-2xl py-12 rounded-2xl text-center">
                   <img className='mx-auto' src="https://edmy-react.hibootstrap.com/images/features/feature-3.svg" alt="" />
 
-                  <h1 className='text-[20px] py-6 font-bold'>Expert-Led Video <br /> Courses</h1>
-                  <p className='py-4'>Instructors from around the <br /> world teach millions of students <br /> on Edmy through video.</p>
-              </div>
+                  <h1 className='text-[20px] py-6 font-bold'>Segment Your Learning <br /> Courses</h1>
+                  <p className=''>Instructors from around the <br /> world teach millions of students <br /> on Edmy through video.</p>
+              </motion.div>
 
 
-              <div className="cart get1 bg-[white] shadow-2xl py-8 rounded-2xl text-center">
+              <motion.div whileHover={{
+    x: 0,
+    y: -7,
+    scale: 1,
+    rotate: 0,
+  }}  className="cart get1 bg-[white] my-4 sm:my-0 shadow-2xl py-12 rounded-2xl text-center">
                   <img className='mx-auto' src="https://edmy-react.hibootstrap.com/images/features/feature-4.svg" alt="" />
 
-                  <h1 className='text-[20px] py-6 font-bold'>Expert-Led Video <br /> Courses</h1>
-                  <p className='py-4'>Instructors from around the <br /> world teach millions of students <br /> on Edmy through video.</p>
-              </div>
+                  <h1 className='text-[20px] py-6 font-bold'>Always Interactive Learning <br /> Courses</h1>
+                  <p className=''>Instructors from around the <br /> world teach millions of students <br /> on Edmy through video.</p>
+              </motion.div>
           </div>
       </div>
       

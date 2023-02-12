@@ -68,7 +68,7 @@ const Categories = () => {
                   }
                  
               </div>
-              <p className='text-center flex items-center justify-center text-[#111] text-[15px]'>Browse All <span className='text-[#057fa8] flex justify-center mx-2 items-center'>Courses <BsArrowRightShort></BsArrowRightShort></span> </p>
+              <p className='text-center flex items-center justify-center font-semibold text-[#6d6d6d] text-[25px]'>Browse All <span className='text-[#057fa8] flex justify-center mx-2 items-center'>Courses <BsArrowRightShort className='text-[36px] mx-4'></BsArrowRightShort></span> </p>
               
          </div>
     </div>

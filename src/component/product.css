@@ -84,9 +84,27 @@
 .l:hover{
 
     scale: 1.1;
-    transition-delay: 0.3s;
-    animation-duration: 3ms;
+    transition: all .5s ease;
     color: #057fa8;
 }
+
+
+
+.books{
+    animation: off-on 12s linear infinite
+  }
+
+  @keyframes off-on {
+    0% {
+      opacity: 0;
+  }
+  
+  75% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  } 
+  }
 
 

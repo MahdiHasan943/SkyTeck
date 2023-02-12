@@ -98,14 +98,32 @@ const Header = () => {
                 Dashboard
               </NavLink>
     </li>
+    
+    <div className=" hidden lg:grid gap-4 grid-cols-3">
+      <div className="bg-[#dee2e6] h-[20px] w-[1px]">
 
-    <NavLink to={'/'}>
+      </div>
+      <div className="flex justify-center">
+      <NavLink to={'/'}>
         <BsCartCheck className='text-[20px]'></BsCartCheck>
       </NavLink>
+    </div>
+      <div className="bg-[#dee2e6] h-[20px] w-[1px]">
+
+</div>
+   </div>
  
+   <NavLink className="lg:hidden " to={'/'}>
+        <BsCartCheck className='text-[20px]'></BsCartCheck>
+      </NavLink>
   
 
-
+{/* 
+    [#dee2e6]
+    #adb5bd
+    #e9ecef
+    #dee2e6
+    #6c757d */}
 
 
 
@@ -129,12 +147,12 @@ const Header = () => {
   return (
     <>
       
-      <div className=" sm:flex  justify-between py-6 px-12 bg-[#0f6c76] text-center">
+      <div className=" sm:flex  justify-between py-3 px-12 bg-[#0f6c76] text-center">
               <div className=""> <p className='text-[#e6f8fc]'>Keep learning with free resources during COVID-19.</p></div>
         <div className="flex justify-center items-center"><p className='text-[#e6f8fc]'>Become An Instructor</p>
           <p className='text-white mx-4'>|</p>
-          <BsArrowRightShort className='text-white font-extrabold text-[24px]'></BsArrowRightShort>
-          <Link to={'/auth'}><span className='text-white'>Signin</span></Link>
+          <BsArrowRightShort className='text-white font-[900] text-[24px]'></BsArrowRightShort>
+          <Link to={'/login'}><span className='text-white font-bold'>Signin</span></Link>
           
         </div>
   
@@ -160,10 +178,10 @@ const Header = () => {
 
             </div>
                   
-                  <div className="pl-20 form-control hidden xl:block">
+                  <div className="pl-20 form-control hidden xl:block">     
   <div className="input-group rounded-lg border-[1px] border-[#098b99]">
-    <input type="text" placeholder="Search courses" className=" px-4 outline-none hover:shadow-none hover:bg-none  hover:border-none " />
-    <button className="btn outline-none hover:bg-white bg-[white] border-none    btn-square">
+    <input type="text" placeholder="Search courses" className="placeholder:text-[#b4b4b3] placeholder:hover:text-[#111] bg-[#f2f0ef] hover:bg-[white] px-4 outline-none hover:shadow-none hover:bg-none  hover:border-none " />
+    <button className="btn outline-none bg-[#f2f0ef] hover:bg-[white] border-none    btn-square">
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#098b99"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
     </button>
               </div>
@@ -188,8 +206,8 @@ const Header = () => {
               {menu}
               <div className="flex items-center">
                 
-              <Link to={'/auth'}>
-              <button className='BT  regis text-white text-[20px] font-bold   rounded-lg py-4 px-10'>Register Now</button>
+              <Link to={'/register'}>
+              <button className='BT  regis text-white text-[20px] font-bold   rounded-lg py-4 px-8'>Register Now</button>
               </Link>
              </div>
            

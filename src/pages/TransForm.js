@@ -20,14 +20,17 @@ const TransForm = () => {
                           <img className='mx-auto lg:h-[100%]'  src="https://edmy-react.hibootstrap.com/images/courses/course-16.jpg" alt="" />
                           
                       </div>
-                      <div className="sm:px-6 text-center sm:text-start py-6 sm:py-0 sm:w-[80%]">
-                          <p className='xl:text-[17px] font-bold pb-1 text-[#111]'>Watch Video From the Community How Edmy <br /> Change Their Life</p>
+                      <div className="sm:px-6 text-center sm:text-start py-6 sm:py-6 sm:w-[80%]">
+                          <p className='xl:text-[17px] font-bold pb-1 text-[#111]'>Watch Video From the Community How Sky Change Their Life</p>
                            <p className='xl:text-[14px] text-[gray] pt-1 font-semibold'>My Courses</p>
                       </div>
                       
                   </div>
-                  <button className='regis BT text-white text-[10px] py-3 px-4 sm:text-[20px] font-bold  mt-8 rounded-lg sm:py-5 sm:px-12'>Find Out Now</button>
+                       
+                  <div className="flex find justify-center sm:justify-start">
+                  <button className='regis  text-white text-[20px]   sm:text-[20px] font-bold  mt-8 rounded-lg py-5 px-12'>Find Out Now</button>
 
+                  </div>
                       
                  
               </div>
