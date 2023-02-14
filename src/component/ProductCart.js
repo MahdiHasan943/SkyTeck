@@ -32,7 +32,7 @@ const ProductCart = ({ product }) => {
       <div className=' flex-1'>
        
       </div>
-          <div className='img-text1 flex gap-2 mt-5'>
+          <div className='img-text1  gap-2 mt-5'>
 
           <h1 className='text-[16px] mt-[-280px]  py-2 text-[white] font-[600] font-Josefin Sans '>{product.title}</h1>
 

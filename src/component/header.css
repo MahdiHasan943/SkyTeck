@@ -49,6 +49,9 @@
  
   }
 
+  .BT{
+    font-weight: 600;
+  }
   .BT:hover{
     transform: scaleX(1.1) scaleY(1.1 );
     transition: all .5s ease;
@@ -64,3 +67,37 @@
     transition: all .5s ease;
 
   }
+
+
+  .font{
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: -1px;
+  }
+  .font1{
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -1px;
+  }
+
+
+  .input{
+    width: 300px;
+  }
+ 
+
+  @media only screen and (min-width: 1450px)  {
+  
+    .input{
+      width: 400px;
+    }
+
+}
+  @media only screen and (min-width: 1750px)  {
+  
+    .input{
+      width: 560px;
+    }
+
+}
+  

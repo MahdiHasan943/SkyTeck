@@ -57,9 +57,9 @@ const Categories = () => {
                   {
                       button.map(but => ( 
                           <div className="mx-auto py-8 w-full ">
-                              <button className='button w-full  hover:border-[#098b99] btn gap-2 shadow-5xl outline-none bg-none hover:outline-none'>
+                              <button className='button w-full  hover:border-[#098b99] btn gap-2 shadow-5xl outline-none  hover:outline-none'>
                                   {but.search} 
-                                  <BsJournalCode className='ml-[90px] text-[20px] outline-none bg-none hover:outline-none flat text-[#098b99]'></BsJournalCode>
+                                  <BsJournalCode className='ml-[90px] text-[20px] outline-none  hover:outline-none flat text-[#098b99]'></BsJournalCode>
 
                               </button>
 

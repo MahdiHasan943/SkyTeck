@@ -17,17 +17,19 @@ const Hero = () => {
 {/* https://edmy-react.hibootstrap.com/images/banner/shape-3.svg
 https://edmy-react.hibootstrap.com/images/banner/shape-1.svg */}
 
-          <div className=" " style={{ backgroundImage: `url("https://edmy-react.hibootstrap.com/images/banner/banner-bg.jpg")` }}>
-        <div className="  relative  bg-[#39a1ae] lg:bg-inherit	">
-          <div className="md:flex px-4  py-[50px]">
+          <div className="px-8  2xl:px-[100px]  bg-[#39a1ae]  lg:bg-gradient-to-r from-[#96d1a1] to-[#36a0ad] " >
+        <div className="  relative 	">
+          <div className="md:flex  py-[80px]">
           {/* py-[30px] */}
                   
-                  <div className="md:w-[50%] ">
-                      <div className=" bg-gradient-to-tl from-[#5fb5b4] to-[#9fd4c5] overflow-hidden p-[20px] h-[350px] sm:h-[500px] w-[100%] md:h-[500px] lg:h-[600px] lg:w-[100%] xl:w-[100%] xl:h-[750px] rounded-[100%]">
-                          <img className='h-[330px] w-[100%] girl animate-pop-in  sm:h-[400px] md:h-[400px] lg:h-[400px] xl:h-[600px]' src="https://edmy-react.hibootstrap.com/images/banner/banner-img-1.png" alt="" />
-                      </div>
+                  <div className="relative pt-8 md:w-[50%] ">
+                      <div className="  z-0 bg-gradient-to-l from-[#7cc3ad] to-[#b4dec2] overflow-hidden  h-[350px] sm:h-[500px] w-[100%] md:h-[500px] lg:h-[600px] lg:w-[100%] opacity-bottom-40 xl:w-[750px] xl:h-[700px] rounded-[100%]">
+                          {/* className='h-[330px] w-[100%] girl animate-pop-in  sm:h-[400px] md:h-[400px] lg:h-[400px] xl:h-[600px]'         */}
+              </div>
+              <img className='absolute w-[] z-40 left-[30px] bottom-[50px] '  src="https://edmy-react.hibootstrap.com/images/banner/banner-img-1.png" alt="" />
+
                   </div>
-                  <div className="md:w-[50%] px-8 py-12">
+                  <div className="md:w-[50%] px-8 py-12 ">
                       
                 <motion.img 
                   className=' kham ml-[-30px] mt-[-30px]' src="https://edmy-react.hibootstrap.com/images/banner/shape-1.svg " alt="" />
@@ -41,17 +43,17 @@ https://edmy-react.hibootstrap.com/images/banner/shape-1.svg */}
                           
     
                           <div className="form-control py-8 w-full">
-      <div className="input-group animate-pop-in group">
-        <input type="text" placeholder="Search Courses" className="input placeholder-[#d6f0f2] w-full py-6  text-white bg-[#7dc2c4] input-bordered" />
+      <div className="input-group animate-pop-in group pr-[100px]">
+        <input type="text" placeholder="Search Courses" className="input focus:outline-none placeholder-[#d6f0f2] py-7  text-white bg-[#7dc2c4] input-bordered" />
         
-                                  <button className="flex   border-0 hover:outline-none hover:bg-[#f0bf79] capitalize text-black hover:border-none outline-none  btn bg-[#f0bf79] ">
+                                  <button className="flex  h-[57px]  border-0 hover:outline-none hover:bg-[#f0bf79] capitalize text-black hover:border-none outline-none  btn bg-[#f0bf79] ">
                                       Search Now
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mx-2 sm:h-6 sm:mx-4 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-4 mx-2 sm:h-6 sm:mx-4 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
         </button>
       </div>
     </div>
-                          <div className="justify-center animate-pop-in little items-center sm:flex">
-                          <div className="avatar-group justify-center mx-auto   pr-4 -space-x-6">
+                          <div className=" animate-pop-in little items-center sm:flex">
+                          <div className="avatar-group justify-center  pr-4 -space-x-6">
       <div className="avatar ">
         <div className="w-12">
           <img className='' src="https://edmy-react.hibootstrap.com/images/banner/client-3.jpg" />

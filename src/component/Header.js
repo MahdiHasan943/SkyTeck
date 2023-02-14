@@ -4,6 +4,7 @@ import { FaCentos } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa";
 import { FaBookOpen } from "react-icons/fa";
 import { BsCartCheck,BsArrowRightShort } from "react-icons/bs";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 import './header.css'
 import { motion } from "framer-motion"
@@ -31,8 +32,8 @@ const Header = () => {
                 title='Home'
                 className={({ isActive }) =>
                   isActive
-                    ? 'font-bold tracking-wide text-[#098b99]  transition-colors duration-200 hover:text-deep-purple-accent-400'
-                    : 'font-medium tracking-wide text-[##111111] transition-colors duration-200 hover:text-deep-purple-accent-400'
+                    ? 'font-bold font1 tracking-wide text-[#098b99]  transition-colors duration-200 hover:text-deep-purple-accent-400'
+                    : 'font-medium font1 tracking-wide text-[##111111] transition-colors duration-200 hover:text-deep-purple-accent-400'
                 }
               >
                 Home
@@ -61,8 +62,8 @@ const Header = () => {
                 title='courses'
                 className={({ isActive }) =>
                   isActive
-                    ? 'font-bold tracking-wide text-[#098b99]    transition-colors duration-200 hover:text-deep-purple-accent-400'
-                    : 'font-medium tracking-wide text-[#111111] transition-colors duration-200 hover:text-deep-purple-accent-400'
+                    ? 'font-bold font1 tracking-wide text-[#098b99]    transition-colors duration-200 hover:text-deep-purple-accent-400'
+                    : 'font-medium font1 tracking-wide text-[#111111] transition-colors duration-200 hover:text-deep-purple-accent-400'
                 }
               >
                 Courses
@@ -70,21 +71,21 @@ const Header = () => {
     </li>
     <li className=' py-2 lg:py-0'>
               <NavLink
-                to='/addToCart'
+                to='/becomeATecher'
                 aria-label='courses'
                 title='addToCart'
                 className={({ isActive }) =>
                   isActive
-                    ? 'font-bold tracking-wide text-[#098b99]    transition-colors duration-200 hover:text-deep-purple-accent-400'
-                    : 'font-medium tracking-wide text-[#111111] transition-colors duration-200 hover:text-deep-purple-accent-400'
+                    ? 'font-bold font1 tracking-wide text-[#098b99]    transition-colors duration-200 hover:text-deep-purple-accent-400'
+                    : 'font-medium font1 tracking-wide text-[#111111] transition-colors duration-200 hover:text-deep-purple-accent-400'
                 }
               >
-                AddToCart
+             Become An Instructor
               </NavLink>
     </li>
 
 
-    <li className=' py-2 lg:py-0'>
+    {/* <li className=' py-2 lg:py-0'>
               <NavLink
                 to='/'
                 aria-label='Dashboard'
@@ -98,7 +99,7 @@ const Header = () => {
                 Dashboard
               </NavLink>
     </li>
-    
+     */}
     <div className=" hidden lg:grid gap-4 grid-cols-3">
       <div className="bg-[#dee2e6] h-[20px] w-[1px]">
 
@@ -147,19 +148,25 @@ const Header = () => {
   return (
     <>
       
-      <div className=" sm:flex  justify-between py-3 px-12 bg-[#0f6c76] text-center">
-              <div className=""> <p className='text-[#e6f8fc]'>Keep learning with free resources during COVID-19.</p></div>
-        <div className="flex justify-center items-center"><p className='text-[#e6f8fc]'>Become An Instructor</p>
-          <p className='text-white mx-4'>|</p>
-          <BsArrowRightShort className='text-white font-[900] text-[24px]'></BsArrowRightShort>
+      <div className="lg:flex   justify-between py-[12px] px-8 2xl:px-[100px] bg-[#0f6c76] ">
+        <div className=""> <p className='text-[#e6f8fc]  font flex justify-center items-center'>Keep learning with free resources during COVID-19.
+          <span className='mx-1 tracking-wide	 text-[16px] font-bold'>Learn more</span>  <span className='text-white arrow text-[24px]'><BiRightArrowAlt/></span></p>
+       
+        </div>
+        
+        <div className="flex justify-center font items-center"><p className='font-bold text-[#e6f8fc]'>Become An Instructor</p>
+        <div className="bg-[#8fc4ca] h-[20px] mx-6  w-[0.6px]">
+
+</div>
+          <BiRightArrowAlt className='text-white font-[900] text-[24px]'/>
           <Link to={'/login'}><span className='text-white font-bold'>Signin</span></Link>
           
         </div>
   
           </div>
           
-    <div className='  nav  shadow-lg'>
-              <div className='px-4   flex it py-4 mx-auto  '>
+    <div className='px-8  2xl:px-[100px]  nav  shadow-sm'>
+              <div className='  flex it py-6 mx-auto  '>
              
                  
                   
@@ -171,24 +178,29 @@ const Header = () => {
           <div className='flex    items-center justify-between'>
               <div className="flex  items-center"> 
               
-            <img src={letter} alt="" />
-            <p className='    text-2xl text-[#111111] text-center font-extrabold tracking-wide #302e2c text-shadow-lg'>
+            <img src="https://edmy-react.hibootstrap.com/images/logo.png" alt="" />
+            {/* <p className='    text-2xl text-[#111111] text-center font-extrabold tracking-wide #302e2c text-shadow-lg'>
              SkyTech
-                  </p>
+                  </p> */}
 
             </div>
                   
-                  <div className="pl-20 form-control hidden xl:block">     
-  <div className="input-group rounded-lg border-[1px] border-[#098b99]">
-    <input type="text" placeholder="Search courses" className="placeholder:text-[#b4b4b3] placeholder:hover:text-[#111] bg-[#f2f0ef] hover:bg-[white] px-4 outline-none hover:shadow-none hover:bg-none  hover:border-none " />
-    <button className="btn outline-none bg-[#f2f0ef] hover:bg-[white] border-none    btn-square">
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#098b99"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-    </button>
-              </div>
-              
+            <div className="pl-16 form-control hidden xl:block">
+            <label class="relative block">
+  
+  <input class=" bg-[#f2f0ef] h-[55px] px-4  placeholder:text-[16px] placeholder:text-[gray]  input  rounded-sm  shadow-sm focus:bg-[white] focus:outline-[#098b99] sm:text-sm" placeholder="Search Courses" type="text" name="search"/>
+  
+  <span class="sr-only">Search</span>
+  <span class="absolute  inset-y-0 right-4 flex items-center pl-2">
+                  <svg class="h-7 w-7 fill-slate-300" viewBox="0 0 20 20">
 
-
-</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="#098b99"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </svg>
+  </span>
+              </label>
+            </div>
+ 
+                 
                   </div>
                   
 
@@ -207,7 +219,7 @@ const Header = () => {
               <div className="flex items-center">
                 
               <Link to={'/register'}>
-              <button className='BT  regis text-white text-[20px] font-bold   rounded-lg py-4 px-8'>Register Now</button>
+              <button className='BT  bg-gradient-to-r from-[#6cc17e] to-[#098b99] text-white text-[16px]    rounded-md py-[15px] px-10'>Register Now</button>
               </Link>
              </div>
            
@@ -224,14 +236,13 @@ const Header = () => {
                 <motion.button
                 animate={{
                   // scale: [1,1.2,1.4,1],
-                    rotate: [ 40, 30, 0 , 40 , 40 , 40,0,0,0,0,0,0,0],
+                    rotate: [ 40, 30, 0 , 30 ,0],
                     
               
                   // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
                 }}
                             aria-label='Close Menu'
-                            title='Close Menu'
-                            className=' px-3 py-2 retalive -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline'
+                            className=' px-3 py-2 retalive -mr-2  rounded hover:bg-gray-100 focus:bg-gray-200 focus:outline-none focus:shadow-outline'
                             onClick={() => setIsMenuOpen(false)}
                             >
                             <svg className='svg   w-8 text-white' viewBox='0 0 24 24'>

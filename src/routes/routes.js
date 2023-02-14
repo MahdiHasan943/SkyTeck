@@ -1,11 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import AddToCart from "../component/addT/AddToCart";
 import Courses from "../component/courses/Courses";
+import Error from "../component/error/Error";
 import Authentication from "../component/login/Authentication";
 import Login from "../component/login/Login";
 import Registration from "../component/login/Registration";
 import Dashboard from "../dashboard/Dashboard";
 import Main from "../layout/Main";
+import BecomeTeacher from "../pages/BecomeTeacher";
 import Home from "../pages/Home";
 
 export const router = createBrowserRouter([
@@ -13,6 +15,7 @@ export const router = createBrowserRouter([
 
     {
         path: '/',
+        errorElement:<Error></Error>,
         element: <Main></Main>,
         
         children: [
@@ -36,6 +39,10 @@ export const router = createBrowserRouter([
                 element:<AddToCart></AddToCart>
             }
             ,
+            {
+                path: '/becomeATecher',
+                element:<BecomeTeacher></BecomeTeacher>
+            },
              {
                  path: '/login',
               element:<Login></Login>
